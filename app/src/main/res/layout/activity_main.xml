@@ -1,0 +1,928 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:text="Questionnaire d'écoute client et de satisfaction"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Dans le but de comprendre le comportement du consommateur des boissons gazeuses dans les supermarchés, vous avez été choisi pour nous fournir un certain nombre d'informations dont l'exploitation est strictement anonyme et à caractère scientifique. Nous vous remercions de votre disponibilité."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quel est votre quartier de résidence?" />
+
+        <EditText
+            android:id="@+id/mon_quartier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisissez le nom de votre quartier"
+            android:inputType="textCapWords"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Vous êtes:" />
+
+        <CheckBox
+            android:id="@+id/un_homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:text="Un homme"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/une_femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:text="Une femme"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quelle est votre tranche d'âge?" />
+
+        <CheckBox
+            android:id="@+id/vingt_cinq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:text="Moins de 25 ans"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/trente_cinq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 26 ans et 35 ans" />
+
+        <CheckBox
+            android:id="@+id/quarante_cinq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 36 ans et 45 ans" />
+
+        <CheckBox
+            android:id="@+id/cinquante_cinq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 46 ans et 55 ans" />
+
+        <CheckBox
+            android:id="@+id/plus_cinquante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Plus de 55 ans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quelle est votre catégorie socioprofessionnelle?" />
+
+        <CheckBox
+            android:id="@+id/pro_salarie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Salarié" />
+
+        <CheckBox
+            android:id="@+id/pro_commercants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Commerçants" />
+
+        <CheckBox
+            android:id="@+id/pro_chefs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Chefs d'entreprise" />
+
+        <CheckBox
+            android:id="@+id/pro_ouvriers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Ouvriers" />
+
+        <CheckBox
+            android:id="@+id/pro_autres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Autres" />
+
+        <EditText
+            android:id="@+id/categorie_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autres à préciser"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quels sont vos critères de choix d'une boisson gazeuse?" />
+
+        <CheckBox
+            android:id="@+id/la_notoriete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="La notoriété" />
+
+        <CheckBox
+            android:id="@+id/qualité_produit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="La qualité du produit" />
+
+        <CheckBox
+            android:id="@+id/dispo_produit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="La disponibilité du produit" />
+
+        <CheckBox
+            android:id="@+id/le_prix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Le prix" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quelles sont les boissons gazeuses que vous connaissez?" />
+
+        <EditText
+            android:id="@+id/vos_boissons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Précisez ici"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Parmi les boissons gazeuses citées lesquelles avez-vous déjà acheté dans un supermarché?" />
+
+        <EditText
+            android:id="@+id/boissons_achetees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Précisez ici"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Parmi les boissons gazeuses citées, lesquelles avez-vous déjà consommé?" />
+
+        <EditText
+            android:id="@+id/boissons_consommees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Précisez ici"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Pour qui achetez-vous les boissons gazeuses Planet dans les supermarchés?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="J'achète les boissons gazeuses pour moi" />
+
+        <EditText
+            android:id="@+id/pour_moi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TS, S, N, IS, TI"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="J'achète les boissons gazeuses pour ma famille" />
+
+        <EditText
+            android:id="@+id/pour_ma_famille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TS, S, N, IS, TI"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="J'achète les boissons gazeuses pour mes amis" />
+
+        <EditText
+            android:id="@+id/pour_mes_amis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TS, S, N, IS, TI"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="J'achète les boissons gazeuses pour une connaissance" />
+
+        <EditText
+            android:id="@+id/pour_une_connaisance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TS, S, N, IS, TI"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Je n'achète jamais les boissons gazeuses Planet" />
+
+        <EditText
+            android:id="@+id/pour_personne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TS, S, N, IS, TI"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="A quel moment achetez-vous le plus les boissons gazeuses dans les supermarchés?" />
+
+        <CheckBox
+            android:id="@+id/en_vac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="En vacances" />
+
+        <CheckBox
+            android:id="@+id/avant_fete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Avant les fetes" />
+
+        <CheckBox
+            android:id="@+id/regulier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Régulièrement" />
+
+        <CheckBox
+            android:id="@+id/ponctuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Ponctuellement pour offrir" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Achetez-vous les boissons gazeuses Planet à ce moment-là?" />
+
+        <CheckBox
+            android:id="@+id/achat_oui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Oui" />
+
+        <CheckBox
+            android:id="@+id/achat_non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Non" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="A quelle fréquence?" />
+
+        <CheckBox
+            android:id="@+id/une_fois_semaine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Une fois par semaine" />
+
+        <CheckBox
+            android:id="@+id/deux_fois_semaine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Deux fois par semaine" />
+
+        <CheckBox
+            android:id="@+id/une_fois_mois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Une fois par mois" />
+
+        <CheckBox
+            android:id="@+id/deux_fois_mois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Deux fois par mois" />
+
+        <CheckBox
+            android:id="@+id/trois_fois_mois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Trois fois par mois" />
+
+        <CheckBox
+            android:id="@+id/occasion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Occasionnellement" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="En moyenne, combien de fois par semaine achetez-vous les boissons gazeuses Planet dans les supermarchés?" />
+
+        <CheckBox
+            android:id="@+id/une_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Moins de 1 fois" />
+
+        <CheckBox
+            android:id="@+id/deux_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="De 1 fois à 2 fois" />
+
+        <CheckBox
+            android:id="@+id/trois_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="De 2 à 3 fois" />
+
+        <CheckBox
+            android:id="@+id/plus_trois_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Plus de 3 fois" />
+-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="En moyenne, combien de fois par semaine achetez-vous les boissons gazeuses Planet dans les supermarchés?" />
+
+        <CheckBox
+            android:id="@+id/moins_une_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Moins de 1 fois" />
+
+        <CheckBox
+            android:id="@+id/une_deux_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="De 1 à 2 fois" />
+
+        <CheckBox
+            android:id="@+id/deux_trois_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="De 2 à 3 fois" />
+
+        <CheckBox
+            android:id="@+id/trois_fois_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Plus de 3 fois" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Le plus souvent, dans quelle tranche horaire venez-vous au supermarché?" />
+
+        <CheckBox
+            android:id="@+id/dix_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="8h - 10h" />
+
+        <CheckBox
+            android:id="@+id/douze_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="10h - 12h" />
+
+        <CheckBox
+            android:id="@+id/quatorze_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="12h - 14h" />
+
+        <CheckBox
+            android:id="@+id/seize_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="14h - 16h" />
+
+        <CheckBox
+            android:id="@+id/dix_huit_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="16h - 18h" />
+
+        <CheckBox
+            android:id="@+id/apres_dix_huit_heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Après 18h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Quelle est la motivation initiale de votre venue dans les supermarchés?" />
+
+        <CheckBox
+            android:id="@+id/cos_ves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Cosmétiques/vestmentaires" />
+
+        <CheckBox
+            android:id="@+id/bois_gaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Boissons gazeuses" />
+
+        <CheckBox
+            android:id="@+id/cha_bo_pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Charcuterie/boulangerie/patisserie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="A combien seriez-vous prêt à payer pour une boisson gazeuse Planet 1L dans les supermarchés?" />
+
+        <CheckBox
+            android:id="@+id/quatre_cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Moins de 400 FCFA" />
+
+        <CheckBox
+            android:id="@+id/cinq_cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 400 et 500 FCFA" />
+
+        <CheckBox
+            android:id="@+id/six_cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 500 et 600 FCFA" />
+
+        <CheckBox
+            android:id="@+id/plus_six_cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Plus de 600 FCFA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Comment jugez-vous les produits Planet?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont de bonne qualité" />
+
+        <EditText
+            android:id="@+id/bonne_qualite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont trop gazeuses" />
+
+        <EditText
+            android:id="@+id/trop_gazeuses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont très sucrées" />
+
+        <EditText
+            android:id="@+id/tres_sucrees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont peu concentrées" />
+
+        <EditText
+            android:id="@+id/peu_concentrees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont disponibles" />
+
+        <EditText
+            android:id="@+id/dispo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont chères" />
+
+        <EditText
+            android:id="@+id/cheres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Les boissons gazeuses Planet sont variées" />
+
+        <EditText
+            android:id="@+id/variees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TAD, DAK, N, PDAK, PDDAK"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Avez-vous déjà été confronté à un problème lié à la consommation des boissons gazeuses Planet?" />
+
+        <CheckBox
+            android:id="@+id/yes_prob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Oui" />
+
+        <CheckBox
+            android:id="@+id/no_prob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Non" />
+
+        <EditText
+            android:id="@+id/probleme_boissons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Si oui, lequel?"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Combien dépensez-vous par mois pour les boissons gazeuses?" />
+
+        <CheckBox
+            android:id="@+id/deux_milles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Moins de 2000 FCFA" />
+
+        <CheckBox
+            android:id="@+id/cinq_milles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Entre 2000 et 5000 FCFA" />
+
+        <CheckBox
+            android:id="@+id/plus_cinq_milles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            android:text="Plus de 5000 FCFA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Que pouvons-nous faire pour mieux vous satisfaire?" />
+
+        <EditText
+            android:id="@+id/vos_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vos suggestions"
+            android:textSize="13sp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:text="TS pour Très Satisfait, S pour Satisfait, N pour Neutre, IS pour Insatisfait, TI pour Très Insatisfait. TAD pour Tout à fait d'accord, DAK pour D'accord, N pour Neutre, PDAK pour Pas d'accord, PDDAK pour Pas du tout d'accord"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Soumettre le quizz"
+            android:background="#FF9800"
+            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            android:onClick="submitQuizz"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
